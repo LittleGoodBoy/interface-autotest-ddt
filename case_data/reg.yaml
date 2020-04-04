@@ -1,0 +1,10 @@
+-
+  url : /api/user/user_reg
+  method : post
+  detail : 用户名字已经被注册的
+  data :
+    username : xxx
+    passwd : aA123456
+    cpasswd : aA123456
+  check :
+    - 用户已存在

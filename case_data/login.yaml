@@ -1,0 +1,29 @@
+-
+  url : /api/user/login
+  method : post
+  detail : 正常登录
+  data :
+    username : xxxx
+    passwd : aA123456
+  check :
+    - userId
+    - sign
+
+-
+  url : /api/user/login
+  method : post
+  detail : 密码错误
+  data :
+    username : xxx
+    passwd : aA12333
+  check :
+      - 密码错误
+
+-
+  url : /api/user/login
+  method : post
+  detail : 不传密码
+  data :
+    username : xxx
+  check :
+    - 必填参数未填
